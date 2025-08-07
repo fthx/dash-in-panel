@@ -48,6 +48,12 @@ export default class PowerProfilePreferences extends ExtensionPreferences {
 
         const groupPanel = new Adw.PreferencesGroup();
         page.add(groupPanel);
+        
+                const hideActivitiesBt = new Adw.SwitchRow({
+            title: 'Hide Activities button',
+        });
+        groupPanel.add(hideActivitiesBt);
+        window._settings.bind('hide-activities-bt', hideActivitiesBt, 'active', Gio.SettingsBindFlags.DEFAULT);
 
         const showRunning = new Adw.SwitchRow({
             title: 'Show only running apps',

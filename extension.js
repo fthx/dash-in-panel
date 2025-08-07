@@ -321,6 +321,16 @@ export default class DashInPanelExtension extends Extension {
 
         if (this._settings.get_boolean('move-date'))
             this._moveDate(true);
+            
+        if (this._settings.get_boolean('hide-activities-bt')) {
+            if (Main.panel.statusArea["activities"] != null) {
+                Main.panel.statusArea["activities"].hide();
+            }
+        } else {
+            if (Main.panel.statusArea["activities"] != null) {
+                Main.panel.statusArea["activities"].show();
+            }
+        }
 
         if (!this._settings.get_boolean('show-dash')) {
             Main.overview.dash.height = 0;

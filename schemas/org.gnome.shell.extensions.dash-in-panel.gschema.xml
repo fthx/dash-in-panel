@@ -28,6 +28,11 @@
         <summary>Show app label on hover</summary>
     </key>
 
+    <key type="b" name="hide-activities-bt">
+        <default>false</default>
+        <summary>Hide Activities button</summary>
+    </key>
+
     <key type="b" name="show-running">
         <default>false</default>
         <summary>Show only running apps</summary>
