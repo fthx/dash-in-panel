@@ -1,4 +1,4 @@
-/*	Dash in panel - GNOME Shell extension - Copyright @fthx 2025 */
+/*	Dash in panel - GNOME Shell extension - Copyright @fthx 2026 */
 
 
 import Clutter from 'gi://Clutter';
